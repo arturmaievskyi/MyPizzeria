@@ -1,10 +1,10 @@
-.red
-{
-background-color: red;
-}
-
 .black
 {
     background-color: black;
 }
 
+.pizzas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}

@@ -5,21 +5,17 @@ async function getProducts (){
 }
 
 
-let products = await getProducts()
-console.log(products)
-
-
-
 function getCardHTML(product) {
     let productData = JSON.stringify(product); 
-    return      `<div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>`
+    return      `<div class="card text-bg-dark" style="max-width: 25rem;">
+                    <img src="${product.image}" class="card-img" >
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">${product.name}<h5>
+                      <p class="card-text ">${product.description}</p>
+                      <div><p class="badge rounded-pill text-bg-warning">Price: ${product.price} euro</p></div>
+                      <button type="button" class="btn btn-danger">Order</button>
+                    </div>
+                  </div>`
 }
 
 
