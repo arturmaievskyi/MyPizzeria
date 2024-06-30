@@ -12,12 +12,14 @@ console.log(products)
 
 function getCardHTML(product) {
     let productData = JSON.stringify(product); 
-    return      `<div class="my-card" style="">
-                    <img src="${product.image}">
-                    <h5 class="text-my-card">${product.title}</h5>
-                    <p class="description-card"> ${product.description} </p>
-                    <button type="button" data-product='${productData}' class="cart-btn">Купити</button>
-                </div>`
+    return      `<div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>`
 }
 
 

@@ -1,50 +1,62 @@
 [
     {
+        "id": 1,
         "name": "Hawol",
         "image": "img/hawol.jpg",
         "description": "Just a pirate pizza from 16. centure",
-        "id": 1
+        "price": 49.99 
     },
     {
         "name": "Itolian",
         "image": "img/itolian.jpg",
         "description": "Wow! The pizza are for thiefs.",
-        "id": 2
+        "id": 2,
+        "price": 49.99 
+
 
     },
     {
         "name": "Kolan",
         "image": "img/Kolan.jpg",
         "description": "Mem! What is your phone number?",
-        "id": 3
+        "id": 3,
+        "price": 49.99 
 
     },
     {
         "name": "Italiana",
         "image": "img/Italiana.jpg",
         "description": "",
-        "id": 4
+        "id": 4,
+        "price": 49.99 
+
 
     },
     {
         "name": "Loif",
         "image": "img/Loif.jpg",
         "description": "",
-        "id": 5
+        "id": 5,
+        "price": 49.99 
+
 
     },
     {
         "name": "Anafish",
         "image": "img/Anafish.jpg",
         "description": "",
-        "id": 6
+        "id": 6,
+        "price": 49.99 
+
 
     },
     {
         "name": "Pachese",
         "image": "img/pachese.jpg",
         "description": "",
-        "id": 7
+        "id": 7,
+        "price": 49.99 
+
 
     }
 ]
