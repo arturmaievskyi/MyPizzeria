@@ -3,7 +3,24 @@
     background-color: black;
 }
 
-.pizzas{
+.pizzas
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.pizza
+{
+    max-width: 25rem;
+    max-height: 30rem;
+}
+.slave
+{
+    max-width: 25rem;
+    max-height: 70rem;
+}
+.slaves
+{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;

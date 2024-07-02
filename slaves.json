@@ -1,3 +1,30 @@
-{
-    
-}
+[
+    {
+        "name": "Dorian",
+        "image": "img/chef.jpg", 
+        "work": "Chef",
+        "pay": "100",
+        "about": "This chef has been working for 10 years, he can make 10 pizzas per hour, and his personal record is 60 pizzas per hour"
+    },
+    {
+        "name":"El-Primo",
+        "image":"img/secondchef.jpg",
+        "work":"Second Chef",
+        "pay":"75",
+        "about":"He comes from mexico. He can kill you if he will thinks you are a stupid idiot😏."
+    },
+    {
+        "name":"Andres",
+        "image":"img/pizzabringer.jpg",
+        "work":"Bringer",
+        "pay":"20",
+        "about":"HE is very fun. He has so much friends that he can work for free"
+    },
+    {
+        "name":"Kunkka",
+        "image":"img/pizzaknifer.jpg",
+        "work":"Knifer",
+        "pay":"60",
+        "about":"Pizza, pizza, knife, knife i your pizza will have many pieces "
+    }
+]
