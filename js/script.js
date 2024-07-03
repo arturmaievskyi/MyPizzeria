@@ -10,15 +10,15 @@ async function getProducts ()
 function getCardHTML(product) 
 {
     let productData = JSON.stringify(product); 
-    return      `<div class="card text-bg-dark" style="max-width: 25rem;">
+    return      `   <div class="card text-bg-dark" style="max-width: 25rem;">
                     <img src="${product.image}" class="card-img" >
                     <div class="card-img-overlay">
-                      <h5 class="card-title">${product.name}<h5>
-                      <p class="card-text ">${product.description}</p>
-                      <div><p class="badge rounded-pill text-bg-warning">Price: ${product.price} euro</p></div>
-                      <button type="button" class="btn btn-danger cart-btn">Order</button>
-                    </div>
-                  </div>`
+                        <h5 class="card-title">${product.name}<h5>
+                        <p class="card-text ">${product.description}</p>
+                        <div><p class="badge rounded-pill text-bg-warning">Price: ${product.price} euro</p></div>
+                            <button type="button" class="btn btn-danger cart-btn" data-product='${JSON.stringify(product)}>Order</button>
+                        </div>
+                    </div>`
 }
 
 
