@@ -1,11 +1,14 @@
-async function getProducts (){
+async function getProducts ()
+
+{
     let response = await fetch("store_db.json")
     let products = await response.json()
     return products
 }
 
 
-function getCardHTML(product) {
+function getCardHTML(product) 
+{
     let productData = JSON.stringify(product); 
     return      `<div class="card text-bg-dark" style="max-width: 25rem;">
                     <img src="${product.image}" class="card-img" >
@@ -20,9 +23,8 @@ function getCardHTML(product) {
 
 
 
-
-
-getProducts().then(function(products){
+getProducts().then(function(products)
+{
     let productsList = document.querySelector('.pizzas')
     if (productsList) { 
         products.forEach(function(product) {
@@ -33,16 +35,17 @@ getProducts().then(function(products){
 
 
 
-
-
-async function getSlaves (){
+async function getSlaves ()
+{
     let response = await fetch("slaves.json")
     let slaves = await response.json()
     return slaves
 }
 
 
-function getSlavesHTML(slaves) {
+
+function getSlavesHTML(slaves) 
+{
     let slavesData = JSON.stringify(slaves); 
     return      `   <div class="slave card text-bg-dark">
                         <img src="${slaves.image}" class="card-img-top">
@@ -56,7 +59,9 @@ function getSlavesHTML(slaves) {
 }
 
 
-getSlaves().then(function(slaves){
+
+getSlaves().then(function(slaves)
+{
     let slavesList = document.querySelector('.slaves')
     if (slavesList) { 
         slaves.forEach(function(slaves) {
@@ -67,63 +72,73 @@ getSlaves().then(function(slaves){
 
 
 
-
-
-
-
-function addToCart(event) {
+function addToCart(event) 
+{
     const productData = event.target.getAttribute('data-product')
     const product = JSON.parse(productData)
     cart.addItem(product)
 }
 
-getAll().then(function (all) {
+
+
+getAll().then(function (all) 
+{
 
     let buyButtons = document.querySelectorAll('.cart-btn')
     if (buyButtons) {
-        buyButtons.forEach(function (button) {
+        buyButtons.forEach(function (button) 
+        {
             button.addEventListener('click', addToCart)
         });
     }
 })
+
+
+
 class ShoppingCart 
 {
-    constructor() {
+    constructor() 
+    {
         this.items = {}
         this.total = 0  
     }
 
-    addItem(item) {
-        if (this.items[item.title]) {
+
+
+    addItem(item) 
+    {
+        if (this.items[item.title]) 
+        {
         this.items[item.title].quantity += 1         
         } 
-        else {
-            this.items[item.title] = item // Якщо товару немає, додаємо його
+        else 
+        {
+            this.items[item.title] = item
             this.items[item.title].quantity = 1
         }
+        this.saveCartToCookies() 
     }
           
     
     
-    calculateTotalPrice() {
+    calculateTotalPrice() 
+    {
     } 
-    	
-
-        saveCartToCookies() {
+        saveCartToCookies() 
+        {
             let cartJSON = JSON.stringify(this.items)
             document.cookie = `cart=${cartJSON}; max-age=${60 * 60 * 24 * 7}; path=/`
         }
     
-    
-    loadCartFromCookies() {
+
+        
+    loadCartFromCookies() 
+    {
         let cartCookie = getCookieValue('cart') 
         if (cartCookie && cartCookie !== '') {
             this.items = JSON.parse(cartCookie)
         }
     }
-
-
-
 }
 
 
