@@ -130,3 +130,50 @@ class ShoppingCart
 
 
 let cart = new ShoppingCart()
+function addToCart(event) {
+    let productData = event.target.getAttribute('data-product')
+    let product = JSON.parse(productData)
+    // тут буде додавання в кошик
+    cart.addItem(product)
+}
+
+
+getProducts().then(function (products) {
+    products.forEach(function (product) {
+        card_list.innerHTML += getCardHtml(product)
+    })
+
+    // Отримуємо всі кнопки "Додати в кошик" на сторінці
+    let buyButtons = document.querySelectorAll('.add-to-cart');
+    // Навішуємо обробник подій на кожну кнопку "Купити"
+    if (buyButtons) {
+        buyButtons.forEach(function (button) {
+            button.addEventListener('click', addToCart)
+        });
+    }
+})
+
+
+ function getCartItem(item){
+    return `<div class="my-card" style="width: 18rem;">
+        <img src="img/${item.image}">
+        <h5 class="text-my-card">${item.title}</h5>
+        <p class="description-card">
+        ${item.description}
+       </p>
+        <p class="price-card">
+      ${item.price}
+       </p>
+         <p class="price-card">
+      Кількість: ${item.quantity}
+       </p>
+      
+    </div>`
+ }
+let cart_list = document.querySelector('.cart-items-list')
+if (cart_list){
+    cart_list.innerHTML = ''
+    for (let title in cart.items){
+        cart_list.innerHTML+= getCartItem(cart.items[title])
+    }
+}
