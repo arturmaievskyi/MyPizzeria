@@ -170,7 +170,7 @@ getProducts().then(function (products) {
       
     </div>`
  }
-let cart_list = document.querySelector('.cart-items-list')
+let cart_list = document.querySelector('.cart')
 if (cart_list){
     cart_list.innerHTML = ''
     for (let title in cart.items){
