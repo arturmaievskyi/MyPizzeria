@@ -25,3 +25,9 @@
     flex-wrap: wrap;
     gap: 30px;
 }
+.bigger{
+    max-height: 120%;
+    max-width: 120%;
+    min-height: 120%;
+    min-width: 120%;
+}

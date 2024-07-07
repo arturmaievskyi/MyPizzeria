@@ -16,7 +16,7 @@ function getCardHTML(product)
                         <h5 class="card-title">${product.name}<h5>
                         <p class="card-text ">${product.description}</p>
                         <div><p class="badge rounded-pill text-bg-warning">Price: ${product.price} euro</p></div>
-                            <button type="button" class="btn btn-danger cart-btn" data-product='${JSON.stringify(product)}>Order</button>
+                            <button type="button" class="btn btn-danger cart-btn" data-product='${JSON.stringify(product)}'>Order</button>
                         </div>
                     </div>`
 }
@@ -78,20 +78,6 @@ function addToCart(event)
     const product = JSON.parse(productData)
     cart.addItem(product)
 }
-
-
-
-getAll().then(function (all) 
-{
-
-    let buyButtons = document.querySelectorAll('.cart-btn')
-    if (buyButtons) {
-        buyButtons.forEach(function (button) 
-        {
-            button.addEventListener('click', addToCart)
-        });
-    }
-})
 
 
 
