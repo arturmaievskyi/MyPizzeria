@@ -1,13 +1,13 @@
 [
     {
         "id": 1,
-        "name": "Hawol",
+        "title": "Hawol",
         "image": "img/hawol.jpg",
         "description": "Just a pirate pizza from 16. centure",
         "price": 49.99 
     },
     {
-        "name": "Itolian",
+        "title": "Itolian",
         "image": "img/itolian.jpg",
         "description": "Wow! The pizza are for thiefs.",
         "id": 2,
@@ -16,7 +16,7 @@
 
     },
     {
-        "name": "Kolan",
+        "title": "Kolan",
         "image": "img/Kolan.jpg",
         "description": "Mem! What is your phone number?",
         "id": 3,
@@ -24,7 +24,7 @@
 
     },
     {
-        "name": "Italiana",
+        "title": "Italiana",
         "image": "img/Italiana.jpg",
         "description": "",
         "id": 4,
@@ -33,7 +33,7 @@
 
     },
     {
-        "name": "Loif",
+        "title": "Loif",
         "image": "img/Loif.jpg",
         "description": "",
         "id": 5,
@@ -42,7 +42,7 @@
 
     },
     {
-        "name": "Anafish",
+        "title": "Anafish",
         "image": "img/Anafish.jpg",
         "description": "",
         "id": 6,
@@ -51,7 +51,7 @@
 
     },
     {
-        "name": "Pachese",
+        "title": "Pachese",
         "image": "img/pachese.jpg",
         "description": "",
         "id": 7,
