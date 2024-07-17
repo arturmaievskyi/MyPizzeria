@@ -40,11 +40,11 @@
 
 
 
-.BuyForm{
-    padding: 5rem;
-
-}
 
 .a{
-    padding: 0.5cm;
+    padding-top: 1rem;
+
+}
+.BuyForm form{
+    max-width: 34rem;
 }
