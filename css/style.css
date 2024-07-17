@@ -27,6 +27,7 @@
     font-size: larger;
     color: white;
     text-decoration: none;
+    
 }
 .contacts{
     display: flex;
@@ -34,4 +35,16 @@
     gap: 30px;
     min-height: 200px;
     align-items: center;
+}
+
+
+
+
+.BuyForm{
+    padding: 5rem;
+
+}
+
+.a{
+    padding: 0.5cm;
 }
