@@ -4,14 +4,14 @@
         "title": "Hawol",
         "image": "img/hawol.jpg",
         "description": "Just a pirate pizza from 16. centure",
-        "price": 49.99 
+        "price": 50
     },
     {
         "title": "Itolian",
         "image": "img/itolian.jpg",
         "description": "Wow! The pizza are for thiefs.",
         "id": 2,
-        "price": 49.99 
+        "price": 50
 
 
     },
@@ -20,7 +20,7 @@
         "image": "img/Kolan.jpg",
         "description": "Mem! What is your phone number?",
         "id": 3,
-        "price": 49.99 
+        "price": 50
 
     },
     {
@@ -28,7 +28,7 @@
         "image": "img/Italiana.jpg",
         "description": "",
         "id": 4,
-        "price": 49.99 
+        "price": 50
 
 
     },
